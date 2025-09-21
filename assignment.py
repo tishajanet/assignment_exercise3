@@ -1,13 +1,11 @@
 import numpy as np
 
-# Create two 2x2 arrays
 A = np.array([[1, 2],
               [3, 4]])
 
 B = np.array([[5, 6],
               [7, 8]])
 
-# Elementwise addition
 add_result = A + B
 
 # Elementwise multiplication
