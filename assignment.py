@@ -1,9 +1,9 @@
 import sys
 import numpy as np
 
-A = np.array([[1, 2], [3, 4]])
+A = np.arange(1,5).reshape(2,2)
 
-B = np.array([[5, 6],[7, 8]])
+B = np.arange(5,9).reshape(2,2)
 
 addition = A + B
 
