@@ -1,21 +1,24 @@
+import sys
 import numpy as np
 
-A = np.array([[1, 2],
-              [3, 4]])
+A = np.array([[1, 2], [3, 4]])
 
-B = np.array([[5, 6],
-              [7, 8]])
+B = np.array([[5, 6],[7, 8]])
 
-add_result = A + B
+addition = A + B
 
-# Elementwise multiplication
-mul_result = A * B
+multiplication = A * B
 
-# Matrix product
-matmul_result = A @ B   # or np.matmul(A, B)
+matrix_product = A @ B
 
-print("Array A:\n", A)
-print("Array B:\n", B)
-print("\nElementwise Addition:\n", add_result)
-print("\nElementwise Multiplication:\n", mul_result)
-print("\nMatrix Product (A @ B):\n", matmul_result)
+def main():
+
+    print(f"Array A: {A}")
+    print(f"Array B: {B}")
+    print(f"Elementwise Addition: {addition}")
+    print(f"Elementwise Multiplication: {multiplication}")
+    print(f"Matrix Product: {matrix_product}")
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())
